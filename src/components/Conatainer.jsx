@@ -17,7 +17,7 @@ function Container() {
       url: `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?limit=${perPage}&offset=${offset}&namePrefix=${searchValue}`,
       params: { toPlaceId: "Q60" },
       headers: {
-        "x-rapidapi-key": "5229d0ca6dmsh4f4c0c9debd738fp18732djsn72c3b978b63e",
+        "x-rapidapi-key": process.env.REACT_APP_X_RAPID_API_KEY,
         "x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
       },
     };
