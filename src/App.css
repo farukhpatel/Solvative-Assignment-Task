@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* container css */
+.container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.table-container {
+  max-width: 600px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px; /* Padding */
+  text-align: left;
+  border-bottom: 1px solid rgb(222, 226, 230); /* Border color */
+}
+
+th {
+  font-weight: 700; /* Header font-weight */
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+  background-color: #f2f2f2; /* Background color on hover */
+}
+
+/* Pagination controls */
+.pagination {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 30px;
+}
+
+.search-box-container {
+  padding: 4px;
+}
+
+.search-box {
+  width: 241px;
+  height: 38px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 212, 218);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.search-box::placeholder {
+  color: #ccc;
+}
+
+.search-box.focused {
+  border-color: #7952b3;
+  box-shadow: 0 0 3px rgba(121, 82, 179, 0.25);
+}
+
+.search-box.disabled {
+  background-color: rgb(233, 236, 239);
+}
+
+/* Additional styles for Keyboard Shortcut display if needed */
+.keyboard-shortcut {
+  font-size: 12px;
+  border-color: rgb(222, 226, 230);
+  border-radius: 2px;
+  height: 24px;
+  padding: 0 4px;
+}
+
+.flag-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.select-per-page {
+  width: 150px;
+  height: 38px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 212, 218);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
